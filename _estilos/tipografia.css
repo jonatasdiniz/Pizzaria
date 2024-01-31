@@ -1,0 +1,183 @@
+h1, h2, h3 {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D90404;
+}
+
+h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #F2B705;
+}
+
+h1 {
+    font-size: 600%;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 400%;
+    font-weight: 200;
+}
+
+h2::after {
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 100px;
+    /*O content sempre tem que ser informado. Caso não tenha um texto ele fica vazio*/
+    content: "";
+    margin: 40px auto 30px;
+}
+
+h4 {
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0;
+}
+
+p, li, a {
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+}
+
+p.destaque {
+    font-size: 130%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+}
+
+/*------------------------*/
+/*  ELEMENTOS DO HEADER   */
+/*------------------------*/
+
+header div.chamada h1 {
+    color: #ffff;
+    /* primeiro valor eixo horizontal, segundo vertical e terceiro espalhamento da sombra*/
+    text-shadow: 4px 6px 10px black;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+header div.chamada h4 {
+    font-size: 250%;
+    text-shadow: 4px 6px 10px black;
+    margin-bottom: 55px;
+    animation-name: HeaderH4-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+header div.chamada a {
+    font-size: 110%;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 80px;
+    border-radius: 50px;
+    display: inline-block;
+    /*é a transoção suave de uma cor para a outra, para utiliza-lo deverá ser informado a cor desejada em seguida porcentagem dessa cor que se deseja colocar*/
+    background: linear-gradient(rgba(7, 140, 49, 55) 0%, rgba(6, 89, 2, 35) 50%, rgba(6, 89, 2, 35) 100%);
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div.pontos-chaves h4 {
+    color: #404040;
+}
+
+div.pontos-chaves h4::after {
+    display: block;
+    background-color: #078c31;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: " ";
+}
+
+/*------------------------*/
+/*     SEÇAO - PIZZA      */
+/*------------------------*/
+
+section.pizza p.destaque {
+    color: #ffff;
+    width: 40%;
+}
+
+section.pizza ul li, section.pizza ul li a {
+    color: #ffff;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*-----------------------------------*/
+
+/*-------- SEÇAO - DEPOIMENTO -------*/
+
+/*-----------------------------------*/
+
+section.testemunha p.destaque {
+    width: 40%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+/*-----------------------------------*/
+
+/*---------- SEÇAO - PLANOS ---------*/
+
+/*-----------------------------------*/
+
+section.plano-principal h4 {
+    color:#D90404;
+}
+
+section.plano-principal ul {
+    margin-top: 25px;
+}
+
+section.plano-principal ul li {
+    font-size: 85%;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2;
+    text-decoration: none;
+    list-style: none;
+}
+
+section.plano-principal div.planos-bottom p {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px;
+}
+
+/*-----------------------------------*/
+
+/*-------------- FOOTER -------------*/
+
+/*-----------------------------------*/
+
+footer div.info ul {
+    margin-left: 15px;
+    margin-bottom: 120px;
+}
+
+footer div.info li {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5px;
+}
+

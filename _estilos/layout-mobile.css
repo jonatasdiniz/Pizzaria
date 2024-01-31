@@ -1,0 +1,77 @@
+/* TIPOGRAFIA */
+header div.chamada h1 {
+    font-size: 350%;
+}
+
+header div.chamada h4 {
+    font-size: 200%;
+    margin-bottom: 25px;
+}
+
+header div.chamada a {
+    border-radius: 0;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+/* DOMINGO PERFEITO*/
+div.pontos-chaves-mestre{
+    /* caso o flex-direction esteja como column o justify-content irá alinhar os elementos no eixo y e não no x e align-itens passará a alinhar o eixo x. */
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: space-between;
+}
+
+div.pontos-chaves {
+width: 80%;
+margin-bottom: 40px;
+}
+
+div.pontos-chaves {
+    font-size: 115%;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+/* TESTEMUNHOS */
+
+div.testemunha-centro{
+    width: 340px;
+}
+
+section.testemunha div.testemunha-centro div.testemunhos ul p{
+    font-size: 115%;
+    font-weight: 300;
+}
+
+/* PLANOS */
+
+section.plano-principal{
+    /*inherit herda do pai a configuração do elemento pai na propriedade onde for utilizado*/
+    height: inherit;
+}
+
+div.planos-janela{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.planos {
+width: 290px;
+margin: 30px;
+}
+
+/* FOOTER */
+footer div.mapa{
+    display: none;
+}
+
+footer div.info{
+    width: 93%;
+}
+

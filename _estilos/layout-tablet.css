@@ -1,0 +1,102 @@
+/* TIPOGRAFIA */
+p.destaque, section.pizza p.destaque, section.testemunha p.destaque {
+    width: 80%;
+}
+
+/* HEADER */
+
+
+nav {
+    width: 100%;
+    left: 0;
+    padding-right: 10px;
+}
+
+nav div {
+    width: 150px;
+    height: 130px;
+    background-position: center bottom;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* DOMINGO PERFEITO */
+
+div.domingo-perfeito-esquerda, div.domingo-perfeito-direita {
+    /*Retira um elemento do fluxo da pagina, esconendo-o*/
+    display: none;
+}
+
+div.domingo-perfeito-centro {
+    width: 95%;
+}
+
+/*pizza*/
+
+div.pizza-opcoes-mestre {
+    width: 95%;
+}
+
+/* TESTEMUNHOS */
+
+div.testemunha-centro {
+    width: 680px;
+}
+
+div.testemunha-esquerda, div.testemunha-direita {
+    display: none;
+}
+
+/* TRANSIÇÃO */
+
+div.transicao-testemunha-plano div.decoracao2 {
+    display: none;
+}
+
+div.transicao-testemunha-plano div.decoracao1, div.transicao-testemunha-plano div.decoracao3 {
+    width: 50%;
+}
+
+/* PLANOS */
+
+div.planos-janela {
+    width: 100%;
+}
+
+div.planos {
+    margin: 80px 5px;
+}
+
+@media screen and (max-width:940px) {
+    div.planos {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    div.planos {
+        font-size: 18px;
+    }
+}
+
+/* FOOTER */
+
+footer div.mapa, footer div.info {
+    width: 45%;
+}
+
+footer div.info {
+    margin-right: 35px;
+}
+
+footer div.redes-sociais ion-icon {
+    width: 10%;
+}
+
+div.pizza-rodape-decoracao {
+    display: none;
+}
